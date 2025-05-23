@@ -1,0 +1,84 @@
+
+.mb_menuwindow {
+	width:100%; 
+	 
+}
+
+.mb_menuwindow ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mb_menuwindow ul .inner {
+    
+    display: none;
+}
+
+.mb_menuwindow ul li {
+    margin: 0;
+}
+
+.mb_menuwindow>ul>li>a {
+font-weight: 500;
+}
+
+.mb_menuwindow ul li a {
+  text-decoration:none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    padding:10px;
+    transition: background .3s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.15em;
+    border-width: 0px 0px 1px 0px;
+	text-align:left
+}
+
+.mb_menuwindow ul li a.toggle {
+position: relative;
+
+}
+.mb_menuwindow ul li a.toggle:before {
+    content:"";
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+
+    position: absolute;
+     width: 18px;
+    height: 10px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+   background-image: url("data:image/svg+xml,%3Csvg width='25' height='13' viewBox='0 0 25 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L12.5 11L23 2' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+ 
+}
+
+
+.mb_menuwindow ul li a.toggle.expanded:before {
+   transform: translate(0, -50%) rotate(180deg);
+}
+
+/*
+ul li a.toggle:hover {
+  background-color: #E9F9F9;
+} */
+
+.mb_menuwindow ul.inner li>a {
+/*    padding-left: 2em; */
+    font-size: 18px;
+      line-height: 1.5
+}
+
+.mb_menuwindow ul.inner .inner li>a {
+/*    padding-left: 3em;*/
+}
+
+.mb_menuwindow ul.inner .inner .inner li>a {
+    padding-left: 4em;
+}
+.mb_menuwindow ul .inner{
+    padding-bottom: 10px
+}
+
